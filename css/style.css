@@ -1,42 +1,42 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 8px;
 }
 
-img{
+img {
     width: 100%;
     height: auto;
     vertical-align: middle;
 }
 
-video{
+video {
     width: 100%;
     height: auto;
 }
 
-.container{
+.container {
     max-width: 1140px;
     margin: 0 auto;
     height: auto;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
 }
 
-.main-header{
-    width: 1600px;
-    height: 837px;
+.main-header {
+    width: 100%;
+    height: auto;
     background-color: #FFF8F3;
 }
 
-.main-header nav.navbar{
+.main-header nav.navbar {
     padding-top: 51px;
     padding-left: 226px;
     display: flex;
@@ -45,7 +45,12 @@ body{
     align-items: center;
 }
 
-.main-header .navbar .logo h1{
+.main-header .navbar .logo a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main-header .navbar .logo h1 {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
@@ -54,6 +59,37 @@ body{
     color: #181818;
 }
 
-.main-header .navbar .logo span.logo-color{
+.main-header .navbar .logo span.logo-color {
     color: #FD6E0A;
+}
+
+.main-header .navbar .menu-bar-section ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    padding-right: 230px;
+}
+
+.main-header .navbar .menu-bar-section ul li {
+    list-style: none;
+    padding-left: 51px;
+}
+
+.main-header .navbar .menu-bar-section ul li a {
+    color: #474747;
+    font-family: Open Sans, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.main-header .navbar .menu-bar-section ul li:nth-child(3) a{
+    background-color: #FD6E0A;
+    padding: 18px 36px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
 }
